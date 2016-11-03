@@ -1,0 +1,18 @@
+{% load i18n %}
+
+<div class="xblock--wireframe--editor editor-with-buttons">
+    <div class="ii_charts_block">
+        <label for="display_name">Display Name: </label>
+        <input id="display_name" value="{{ self.display_name }}">
+        <label for="chart_type">Chart type selected: </label>
+        <input id="chart_type" value="{{ self.chart_type }}">
+    </div>
+
+    <ul id="navigation" class="slimmenu"></ul>
+
+    <div class="xblock-actions">
+        <span class="xblock-editor-error-message"></span>
+        <button class="button action-primary save-button">{% trans "Save" %}</button>
+        <button class="button cancel-button">{% trans "Cancel" %}</button>
+    </div>
+</div>
